@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Blur">
+      <UniqueIdentifier>{90b9d2ad-f399-46c7-9af2-9b78f1b626ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Blur">
+      <UniqueIdentifier>{b5e20f6e-90b7-4fbf-8fcd-73fad0dd3ffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Blur">
+      <UniqueIdentifier>{44ff6a34-40fb-479c-9e2c-7d2fad75ad45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Blur\Horizontal">
+      <UniqueIdentifier>{23abf1ab-4d08-4094-ab19-7c07136b4b26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Blur\Vertical">
+      <UniqueIdentifier>{e13a84f9-e823-432f-b596-74938a3e8f5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Blur\Threshold">
+      <UniqueIdentifier>{db80b5ac-9aae-4510-a2ae-ec67204eb934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shadows">
+      <UniqueIdentifier>{de70f1e3-2cee-4bb3-8702-c5b7fa83f19f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shadows\Height Map">
+      <UniqueIdentifier>{59889185-a228-4844-ac29-734eff04a6bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shadows\Water">
+      <UniqueIdentifier>{ceb84f44-9bb2-4ea0-bf63-ad3b4133abb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shadows\Model">
+      <UniqueIdentifier>{928673dd-dab8-4499-93e7-e03c7995b1ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shadows\Depth pass">
+      <UniqueIdentifier>{b8e25afa-d3db-4d8b-bf40-2ced3e941c22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shadows">
+      <UniqueIdentifier>{2d77244a-d319-40a8-a87c-e72910cef439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shadows">
+      <UniqueIdentifier>{946364aa-5819-4a3b-b98b-5236c1030387}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthShader.cpp">
+      <Filter>Source Files\Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowShader.cpp">
+      <Filter>Source Files\Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelDepth.cpp">
+      <Filter>Source Files\Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelShadow.cpp">
+      <Filter>Source Files\Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="HorizontalBlurShader.cpp">
+      <Filter>Source Files\Blur</Filter>
+    </ClCompile>
+    <ClCompile Include="VerticalBlurShader.cpp">
+      <Filter>Source Files\Blur</Filter>
+    </ClCompile>
+    <ClCompile Include="Threshold.cpp">
+      <Filter>Source Files\Blur</Filter>
+    </ClCompile>
+    <ClCompile Include="WaterShadow.cpp">
+      <Filter>Source Files\Shadows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthShader.h">
+      <Filter>Header Files\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowShader.h">
+      <Filter>Header Files\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelDepth.h">
+      <Filter>Header Files\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelShadow.h">
+      <Filter>Header Files\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="VerticalBlurShader.h">
+      <Filter>Header Files\Blur</Filter>
+    </ClInclude>
+    <ClInclude Include="HorizontalBlurShader.h">
+      <Filter>Header Files\Blur</Filter>
+    </ClInclude>
+    <ClInclude Include="Threshold.h">
+      <Filter>Header Files\Blur</Filter>
+    </ClInclude>
+    <ClInclude Include="WaterShadow.h">
+      <Filter>Header Files\Shadows</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="texture_ps.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="texture_vs.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="shadow_ps.hlsl">
+      <Filter>Resource Files\Shadows\Height Map</Filter>
+    </FxCompile>
+    <FxCompile Include="shadow_vs.hlsl">
+      <Filter>Resource Files\Shadows\Height Map</Filter>
+    </FxCompile>
+    <FxCompile Include="waterShadow_ps.hlsl">
+      <Filter>Resource Files\Shadows\Water</Filter>
+    </FxCompile>
+    <FxCompile Include="waterShadow_vs.hlsl">
+      <Filter>Resource Files\Shadows\Water</Filter>
+    </FxCompile>
+    <FxCompile Include="modelShadow_ps.hlsl">
+      <Filter>Resource Files\Shadows\Model</Filter>
+    </FxCompile>
+    <FxCompile Include="modelShadow_vs.hlsl">
+      <Filter>Resource Files\Shadows\Model</Filter>
+    </FxCompile>
+    <FxCompile Include="depth_ps.hlsl">
+      <Filter>Resource Files\Shadows\Depth pass</Filter>
+    </FxCompile>
+    <FxCompile Include="depth_vs.hlsl">
+      <Filter>Resource Files\Shadows\Depth pass</Filter>
+    </FxCompile>
+    <FxCompile Include="modelDepth_vs.hlsl">
+      <Filter>Resource Files\Shadows\Depth pass</Filter>
+    </FxCompile>
+    <FxCompile Include="horizontalBlur_ps.hlsl">
+      <Filter>Resource Files\Blur\Horizontal</Filter>
+    </FxCompile>
+    <FxCompile Include="horizontalBlur_vs.hlsl">
+      <Filter>Resource Files\Blur\Horizontal</Filter>
+    </FxCompile>
+    <FxCompile Include="verticalBlur_ps.hlsl">
+      <Filter>Resource Files\Blur\Vertical</Filter>
+    </FxCompile>
+    <FxCompile Include="verticalBlur_vs.hlsl">
+      <Filter>Resource Files\Blur\Vertical</Filter>
+    </FxCompile>
+    <FxCompile Include="threshold_ps.hlsl">
+      <Filter>Resource Files\Blur\Threshold</Filter>
+    </FxCompile>
+    <FxCompile Include="threshold_vs.hlsl">
+      <Filter>Resource Files\Blur\Threshold</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
